@@ -1,0 +1,29 @@
+<%- include('components/header'); -%>
+<main class="content">
+    <div>
+        <h1>Vista de productos</h1>
+        <table class="table table-dark table-striped" v-if="hayProductos">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Foto</th>
+              </tr>
+            </thead>
+            <tbody>
+                <% for(var i=0; i < Object.keys(productos).length ; i++) {%>
+                <tr >
+                    <th scope="row"><%=i+1%></th>
+                    <td><%=productos[i].title%></td>
+                    <td><%=productos[i].price%></td>
+                    <td>
+                    <img class="image" src="<%=productos[i].tumbnails%>" alt="<%=productos[i].title%>">
+                    </td>
+                </tr>
+                <% }); %> 
+            </tbody>
+          </table>
+      </div>
+</main>
+<%- include('components/footer'); -%>

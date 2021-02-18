@@ -1,0 +1,29 @@
+body{
+    display: grid;
+    background-color: gray;
+}
+.content{
+    margin: auto;
+    width: 500px;
+}
+main{
+    padding: 20px 0;
+}
+*{
+    margin:0;
+    color: black;
+    outline: none;
+}
+.base-form{
+    display: grid;
+}
+
+form>input{
+    margin: 5px;
+}
+form>button{
+    margin: 4px;
+}
+.none{
+    display: none;
+}

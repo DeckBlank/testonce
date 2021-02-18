@@ -1,0 +1,47 @@
+<%- include('components/header'); -%>
+<main class="content">
+    <div>
+        <h1>Ingrese Producto</h1>
+        <form class="row g-3" id="myForm" >
+          <div class="col-md-12">
+            <label for="inputEmail4" class="form-label">Acción</label>
+            <!-- <input type="text" class="form-control" placeholder="Calculadora" name="title"> -->
+            <select name="metodo" class="form-control" id="select">
+              <option value="post">Crear</option>
+              <option value="put">Actualizar</option>
+              <option value="delete">Eliminar</option>
+            </select>
+          </div>
+          <div class="col-md-12" id="divId">
+            <label for="inputId" class="form-label">ID</label>
+            <input id="inputId" class="form-control none" type="number" placeholder="0" name="id"  >
+          </div>
+          <div class="col-md-12">
+            <label for="title" class="form-label">Nombre</label>
+            <input type="text" class="form-control" placeholder="Calculadora" id="title" name="title">
+          </div>
+          <div class="col-md-12">
+            <label for="price" class="form-label">Precio</label>
+            <input type="number" class="form-control" placeholder="132456" id="price" name="price">
+          </div>
+          <div class="col-md-12">
+            <label for="tumbnails" class="form-label">Foto URL</label>
+            <input type="text" class="form-control" placeholder="https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-512.png" id="tumbnails" name="tumbnails">
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+        <br>
+        <br>
+        <div class="row">
+          <a target="_blank" class="btn btn-warning" href="ejs/productos/vista">
+            Ver Productos
+          </a>
+        </div>
+        <br>
+        <br>
+      </div>
+</main>
+<%- include('components/footer'); -%>
+<script type="text/javascript" src="/js/ejs.js"></script>

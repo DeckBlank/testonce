@@ -1,0 +1,23 @@
+doctype html
+html
+    include components/head.pug
+    body
+    header 
+    main.content
+        h1 Ingrese Producto
+        form.row.g-3#myForm(method="post" action="/api/productos")
+            div.col-md-12.vertical
+                label.form-label(for="title") Nombre
+                input.form-input#title(name="title" type="text" placeholder="Calculadora")
+            div.col-md-12.vertical
+                label.form-label(for="price") Precio
+                input.form-input#price(name="price" type="number" placeholder="123456")
+            div.col-md-12.vertical
+                label.form-label(for="tumbnails") Foto URL
+                input.form-input#tumbnails(name="tumbnails" type="text" placeholder="https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-512.png")
+            input(type="submit") 
+        h1 Vista de productos 
+        table.table.table-dark.table-striped
+    include components/footer.pug 
+    script
+        include ./../public/js/pug.js

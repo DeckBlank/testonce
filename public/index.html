@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header class="content">
+
+    </header>
+    <main class="content">
+        <div>
+            <form class="base-form" id="myForm">
+                <select name="metodo" id="select">
+                    <option value="post">Crear</option>
+                    <option value="put">Actualizar</option>
+                    <option value="delete">Eliminar</option>
+                    <option value="get">Ver</option>
+                </select>
+                <input id="inputId" type="number" placeholder="Id" name="id" class="none" >
+                <input type="text" placeholder="Titulo" name="title">
+                <input type="number" placeholder="Price" name="price">
+                <input type="text" placeholder="Tumbnails" name="tumbnails">
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <br>
+        <div>
+            <div id="contenido">
+
+            </div>
+        </div>
+    </main>
+    <footer class="content">
+
+    </footer>
+<script src="js/index.js"></script>
+</body>
+</html>

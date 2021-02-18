@@ -1,0 +1,27 @@
+doctype html
+html
+    include components/head.pug
+    body
+    header 
+    main.content
+        h1 Vista de productos
+        if productos.length 
+            table.table.table-dark.table-striped
+                thead
+                    tr
+                        th #
+                        th Nombre
+                        th Precio
+                        th Foto
+                tbody
+                    each n,i in productos
+                        tr  
+                            td= i+1
+                            td= n.title
+                            td= n.price
+                            td
+                                img.image(src=n.tumbnails, alt="")
+        else
+            h1.error= productos.error
+    include components/footer.pug 
+    
